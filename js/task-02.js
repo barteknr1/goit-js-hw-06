@@ -1,4 +1,5 @@
 const { log } = console;
+
 const ingredients = [
   'Potatoes',
   'Mushrooms',
@@ -8,7 +9,6 @@ const ingredients = [
   'Condiments',
 ];
 const ingredientsList = document.querySelector('#ingredients');
-log(ingredientsList);
 
 [...ingredients].forEach(el => {
   const item = document.createElement('li');
