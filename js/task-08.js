@@ -1,4 +1,5 @@
 const { log } = console;
+document.body.style.backgroundColor = 'gray';
 
 const form = document.querySelector(".login-form");
 

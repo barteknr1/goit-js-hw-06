@@ -1,4 +1,5 @@
 const { log } = console;
+document.body.style.backgroundColor = 'gray';
 
 const validationInput = document.querySelector("#validation-input");
 const inputLength = Number(validationInput.getAttribute("data-length"));

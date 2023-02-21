@@ -1,4 +1,5 @@
 const { log } = console;
+document.body.style.backgroundColor = 'gray';
 
 const ingredients = [
   'Potatoes',

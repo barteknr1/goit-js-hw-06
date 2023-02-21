@@ -1,4 +1,5 @@
 const { log } = console;
+document.body.style.backgroundColor = 'gray';
 
 const categories = document.querySelectorAll('.item');
 log('Number of categories:', categories.length);
