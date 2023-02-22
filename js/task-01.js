@@ -1,10 +1,7 @@
-const { log } = console;
-document.body.style.backgroundColor = 'gray';
-
 const categories = document.querySelectorAll('.item');
-log('Number of categories:', categories.length);
+console.log('Number of categories:', categories.length);
 
 categories.forEach(el => {
-    log('Category:', el.firstElementChild.textContent)
-    log('Elements:', el.lastElementChild.children.length)
+    console.log('Category:', el.firstElementChild.textContent)
+    console.log('Elements:', el.lastElementChild.children.length)
 })

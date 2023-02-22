@@ -1,6 +1,3 @@
-const { log } = console;
-document.body.style.backgroundColor = 'gray';
-
 const form = document.querySelector(".login-form");
 
 form.addEventListener("submit", handleSubmit);
@@ -19,7 +16,7 @@ function handleSubmit(e) {
           email: email.value,
           password: password.value
       };
-      log(userData);
+      console.log(userData);
     }
   e.currentTarget.reset();
 }

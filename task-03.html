@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task 3</title>
-    <link rel="stylesheet" href="css/common.css" />
-  </head>
-  <body>
-    <p><a href="index.html">Go back</a></p>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task 3</title>
+		<link rel="stylesheet" href="css/common.css" />
+		<style>
+			.gallery {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 30px;
+				list-style-type: none;
+				padding: 0;
+				margin: 25px 0 0 0;
+			}
 
-    <ul class="gallery"></ul>
+			.img {
+				display: block;
+				width: 100%;
+				aspect-ratio: 3/2;
+				object-fit: cover;
+			}
 
-    <script src="js/task-03.js" type="module"></script>
-  </body>
+			@media screen and (max-width: 1199px) {
+				.gallery {
+					grid-template-columns: 1fr;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<p><a href="index.html">Go back</a></p>
+
+		<ul class="gallery"></ul>
+
+		<script src="js/task-03.js" type="module"></script>
+	</body>
 </html>

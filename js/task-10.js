@@ -1,13 +1,9 @@
-const { log } = console;
-document.body.style.backgroundColor = 'gray';
-
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 const create = document.querySelector('button[data-create]');
 const destroy = document.querySelector('button[data-destroy]');
 const boxes = document.querySelector('#boxes');
-log(boxes);
 const size = 30;
 const boxCount = 0;
 
